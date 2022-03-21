@@ -5,7 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Central Juchitán</title>
+  <link rel="preload" href="css/globals.css" as="style">
+  <link rel="preload" href="css/media-queries.css" as="style">
+  <link rel="preload" href="css/hamburger-menu.css" as="style">
+  <link rel="preload" href="js/hamburger-menu.js" as="script">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/hamburger-menu.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header__content container">
+      <a class="header__content__logo" href="/">
+        <img class="logo__image" src="img/logotipo-hotel-central.webp" alt="Logotipo Hotel Central">
+      </a>
+
+      <button class="hamburger hamburger--squeeze" id="button-menu" type="button" aria-label="menu">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <div class="nav__container">
+          <a class="nav__link" href="#nosotros">Nosotros</a>
+          <a class="nav__link" href="#habitaciones">Habitaciones</a>
+          <a class="nav__link" href="#servicios">Servicios</a>
+          <a class="nav__link" href="https://turismo.hotelcentral.com.mx" target="_blank">Turismo</a>
+          <a class="nav__link" href="#ubicacion">Ubicación</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script src="js/hamburger-menu.js"></script>
 </body>
 </html>

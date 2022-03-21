@@ -1,0 +1,140 @@
+/* ********************************************************************************* */
+/* ************************************ IMPORTS ************************************ */
+/* ********************************************************************************* */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ********************************************************************************* */
+/* ******************************* CUSTOM PROPERTIES ******************************* */
+/* ********************************************************************************* */
+:root {
+  --max-width: 1200px;
+  --header: 75px;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --candy-corn-color: #fae45a;
+  --robins-egg-blue-color: #00b8b2;
+  --torch-red-color: #ff064a;
+  --scarlet-gum-color: #601663;
+  --tamarind-color: #321728;
+  --font: 'Work Sans', sans-serif;
+}
+
+/* ********************************************************************************* */
+/* ************************************* RESET ************************************* */
+/* ********************************************************************************* */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+/* ********************************************************************************* */
+/* ********************************* UTILITY CLASS ********************************* */
+/* ********************************************************************************* */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ********************************************************************************* */
+/* ************************************* HEADER ************************************ */
+/* ********************************************************************************* */
+.header {
+  background-color: var(--tamarind-color);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__content__logo {
+  width: 150px;
+  height: 35px;
+}
+
+.logo__image {
+  width: 100%;
+  height: 100%;
+  image-rendering: crisp-edges;
+}
+
+#button-menu {
+  display: none;
+}
+
+.nav__container {
+  display: flex;
+  gap: 24px;
+}
+
+.nav__link {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav__link::after {
+  background-color: var(--candy-corn-color);
+  content: "";
+  bottom: -5px;
+  left: 0;
+  position: absolute;
+  transition: 0.3s ease width;
+  height: 3px;
+  width: 0%;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
