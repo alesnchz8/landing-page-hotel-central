@@ -79,6 +79,22 @@ figure {
   margin-left: auto;
 }
 
+.section {
+  padding: 32px 16px;
+}
+
+.section__title {
+  border-top: 1px solid var(--torch-red-color);
+  border-bottom: 1px solid var(--torch-red-color);
+  margin: 32px auto 24px;
+  padding: 8px 16px;
+  width: max-content;
+}
+
+.text__center {
+  text-align: center;
+}
+
 /* ********************************************************************************* */
 /* ************************************* HEADER ************************************ */
 /* ********************************************************************************* */
@@ -137,4 +153,53 @@ figure {
 
 .nav__link:hover::after {
   width: 100%;
+}
+
+/* ********************************************************************************* */
+/* ************************************* ROOMS ************************************* */
+/* ********************************************************************************* */
+.section__rooms {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+.container__room img {
+  border-radius: 4px;
+}
+
+.container__room figcaption {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+
+/* ********************************************************************************* */
+/* ************************************ SERVICES *********************************** */
+/* ********************************************************************************* */
+.section__services {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+.container__service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--tamarind-color);
+  border-radius: 4px;
+  height: 180px;
+  padding: 16px;
+}
+
+.container__service svg {
+  margin-bottom: 10px;
+}
+
+.title__service {
+  font-weight: 500;
 }
