@@ -45,7 +45,7 @@ img {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 0;
 }
 
@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -67,6 +67,10 @@ p {
 
 figure {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ********************************************************************************* */
@@ -84,11 +88,11 @@ figure {
 }
 
 .section__title {
+  color: var(--tamarind-color);
   border-top: 1px solid var(--torch-red-color);
   border-bottom: 1px solid var(--torch-red-color);
   margin: 32px auto 24px;
   padding: 8px 16px;
-  width: max-content;
 }
 
 .text__center {
@@ -168,12 +172,30 @@ figure {
   border-radius: 4px;
 }
 
-.container__room figcaption {
-  font-size: 18px;
+.container__room h3 {
   text-align: center;
   font-weight: 700;
-  text-transform: uppercase;
   padding: 8px 0;
+}
+
+/* ********************************************************************************* */
+/* ************************************ SPONSORS *********************************** */
+/* ********************************************************************************* */
+.section__sponsors {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+
+.container__sponsor,
+.container__sponsor a {
+  display: flex;
+}
+
+.container__sponsor img {
+  width: 208px;
+  height: 104px;
+  padding: 10;
 }
 
 /* ********************************************************************************* */
@@ -202,4 +224,66 @@ figure {
 
 .title__service {
   font-weight: 500;
+}
+
+/* ********************************************************************************* */
+/* ************************************* FOOOTER *********************************** */
+/* ********************************************************************************* */
+.footer {
+  background-color: var(--tamarind-color);
+}
+
+.container__footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  padding: 48px 0;
+}
+
+.section__contact h3,
+.section__payment h3,
+.section__social__media h3 {
+  color: var(--white-color);
+  margin-bottom: 24px;
+}
+
+.section__contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 24px;
+  padding-left: 10px;
+}
+
+.section__contact div:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.section__contact p {
+  color: var(--white-color);
+}
+
+.section__payment div,
+.section__payment figure {
+  display: flex;
+  /* gap: 10px; */
+}
+
+.section__payment img {
+  width: 80px;
+  height: 40px;
+}
+
+.section__social__media div {
+  display: flex;
+  gap: 14px;
+  padding-left: 10px;
+}
+
+.section__social__media a {
+  display: flex;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 4px;
 }
