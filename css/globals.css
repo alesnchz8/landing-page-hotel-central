@@ -1,7 +1,9 @@
 /* ********************************************************************************* */
 /* ************************************ IMPORTS ************************************ */
 /* ********************************************************************************* */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* ********************************************************************************* */
 /* ******************************* CUSTOM PROPERTIES ******************************* */
@@ -16,7 +18,9 @@
   --torch-red-color: #ff064a;
   --scarlet-gum-color: #601663;
   --tamarind-color: #321728;
-  --font: 'Work Sans', sans-serif;
+  /* --font: 'Work Sans', sans-serif; */
+  /* --font: 'Montserrat', sans-serif; */
+  --font: 'Poppins', sans-serif;
 }
 
 /* ********************************************************************************* */
@@ -84,7 +88,7 @@ a {
 }
 
 .section {
-  padding: 32px 16px;
+  padding: 48px 0;
 }
 
 .section__title {
@@ -93,6 +97,7 @@ a {
   border-bottom: 1px solid var(--torch-red-color);
   margin: 32px auto 24px;
   padding: 8px 16px;
+  width: fit-content;
 }
 
 .text__center {
@@ -240,6 +245,11 @@ a {
   padding: 48px 0;
 }
 
+.container__social__media__payments {
+  display: grid;
+  gap: 50px;
+}
+
 .section__contact h3,
 .section__payment h3,
 .section__social__media h3 {
@@ -253,7 +263,7 @@ a {
   align-items: flex-start;
   gap: 4px;
   margin-bottom: 24px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .section__contact div:nth-last-child(1) {
@@ -267,17 +277,20 @@ a {
 .section__payment div,
 .section__payment figure {
   display: flex;
+  margin-block: 0;
 }
 
 .section__payment img {
   width: 80px;
+  max-width: 80px;
   height: 40px;
+  max-height: 40px;
 }
 
 .section__social__media div {
   display: flex;
   gap: 14px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .section__social__media a {
@@ -285,4 +298,14 @@ a {
   border: 2px solid #ffffff;
   border-radius: 50%;
   padding: 4px;
+}
+
+.container__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.container__copyright p {
+  color: var(--white-color);
 }

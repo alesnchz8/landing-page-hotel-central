@@ -208,12 +208,8 @@
 /* ********************************************************************************* */
 /* ************************************* FOOOTER *********************************** */
 /* ********************************************************************************* */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .container__footer {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .section__payment div {
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
