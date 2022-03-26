@@ -63,7 +63,8 @@ h3 {
   margin: 0;
 }
 
-p {
+p,
+blockquote {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
@@ -75,6 +76,11 @@ figure {
 
 a {
   text-decoration: none;
+}
+
+blockquote {
+  margin-block: 0;
+  margin-inline: 0;
 }
 
 /* ********************************************************************************* */
@@ -229,6 +235,30 @@ a {
 
 .title__service {
   font-weight: 500;
+}
+
+/* ********************************************************************************* */
+/* ************************************ COMMENTS *********************************** */
+/* ********************************************************************************* */
+.section__comments {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+
+.comment blockquote {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.user__comment {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* ********************************************************************************* */
