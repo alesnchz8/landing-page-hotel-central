@@ -1,4 +1,6 @@
+/* ********************************************************************************* */
 /* ******************************* SCROLL TOP BUTTON ******************************* */
+/* ********************************************************************************* */
 const $scrollTopBtn = document.getElementById('scroll-top-btn');
 
 window.addEventListener('scroll', (e) => {
@@ -9,7 +11,9 @@ window.addEventListener('scroll', (e) => {
 
 $scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+/* ********************************************************************************* */
 /* ********************************* HAMBURGER MENU ******************************** */
+/* ********************************************************************************* */
 const $buttonMenu = document.getElementById('button-menu');
 const $nav = document.getElementById('nav');
 
