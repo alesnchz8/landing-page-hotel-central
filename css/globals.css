@@ -1,7 +1,45 @@
 /* ********************************************************************************* */
 /* ************************************* FONTS ************************************* */
 /* ********************************************************************************* */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Poppins-400-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Regular Italic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Poppins-400-Regular-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Poppins-500-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Poppins-600-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Poppins-700-Bold.ttf") format("truetype");
+}
 
 /* ********************************************************************************* */
 /* ******************************* CUSTOM PROPERTIES ******************************* */
@@ -16,7 +54,7 @@
   --torch-red-color: #ff064a;
   --scarlet-gum-color: #601663;
   --tamarind-color: #321728;
-  --font: 'Poppins', sans-serif;
+  --font: "Poppins Regular", sans-serif;
 }
 
 /* ********************************************************************************* */
@@ -45,22 +83,26 @@ img {
 }
 
 h1 {
+  font-family: "Poppins Bold", sans-serif;
   font-size: 1.625rem;
   margin: 0;
 }
 
 h2 {
+  font-family: "Poppins Bold", sans-serif;
   font-size: 1.5rem;
   margin: 0;
 }
 
 h3 {
+  font-family: "Poppins Bold", sans-serif;
   font-size: .875rem;
   margin: 0;
 }
 
 p,
 blockquote {
+  font-family: "Poppins Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -333,8 +375,8 @@ blockquote {
 
 .nav__link {
   color: var(--white-color);
+  font-family: "Poppins SemiBold", sans-serif;
   font-size: 1rem;
-  font-weight: 600;
   text-decoration: none;
   position: relative;
 }
@@ -440,8 +482,6 @@ blockquote {
 }
 
 .container__room h3 {
-  text-align: center;
-  font-weight: 700;
   padding: .5rem 0;
 }
 
@@ -509,7 +549,7 @@ blockquote {
 }
 
 .title__service {
-  font-weight: 500;
+  font-family: "Poppins Medium", sans-serif;
 }
 
 @media screen and (min-width: 36rem) {
@@ -539,6 +579,7 @@ blockquote {
   -webkit-line-clamp: 4;
   line-clamp: 4;
   overflow: hidden;
+  font-family: "Poppins Regular Italic", sans-serif;
   margin-bottom: 1rem;
 }
 
