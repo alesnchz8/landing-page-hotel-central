@@ -6,12 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Central Juchitán</title>
   <link rel="preload" href="css/globals.css" as="style">
-  <link rel="preload" href="css/media-queries.css" as="style">
-  <link rel="preload" href="css/hamburger-menu.css" as="style">
-  <link rel="preload" href="js/hamburger-menu.js" as="script">
+  <link rel="preload" href="js/main.js" as="script">
   <link rel="stylesheet" href="css/globals.css">
-  <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="css/hamburger-menu.css">
 </head>
 <body>
   <header class="header">
@@ -39,6 +35,14 @@
   </header>
 
   <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title text__center">Acerca de Nosotros</h2>
+
+        <article class="section__about"></article>
+      </div>
+    </section>
+
     <section class="section" id="habitaciones">
       <div class="container">
         <h2 class="section__title text__center">Nuestras Habitaciones</h2>
@@ -74,25 +78,25 @@
       <article class="section__sponsors">
         <figure class="container__sponsor">
           <a href="https://www.expedia.mx/Juchitan-De-Zaragoza-Hoteles-Hotel-Central.h42090604.Informacion-Hotel" target="_blank">
-            <img src="img/icons/logotipo-expedia.svg" alt="Logotipo Expedia">
+            <img src="img/iconos/logotipo-expedia.svg" alt="Logotipo Expedia">
           </a>
         </figure>
 
         <figure class="container__sponsor">
           <a href="https://www.tripadvisor.com.mx/Hotel_Review-g1637928-d1943309-Reviews-Hotel_Central-Juchitan_Southern_Mexico.html" target="_blank">
-            <img src="img/icons/logotipo-tripadvisor.svg" alt="Logotipo TripAdvisor">
+            <img src="img/iconos/logotipo-tripadvisor.svg" alt="Logotipo TripAdvisor">
           </a>
         </figure>
 
         <figure class="container__sponsor">
           <a href="https://www.hoteles.com/ho1347899328/hotel-central-juchitan-de-zaragoza-mexico" target="_blank">
-            <img src="img/icons/logotipo-hoteles-com.svg" alt="Logotipo Hoteles.com">
+            <img src="img/iconos/logotipo-hoteles-com.svg" alt="Logotipo Hoteles.com">
           </a>
         </figure>
 
         <figure class="container__sponsor">
           <a href="https://www.despegar.com.mx/accommodations/detail/2015864/2022-03-25/2022-03-26/2" target="_blank">
-            <img src="img/icons/logotipo-despegar.svg" alt="Logotipo Despegar">
+            <img src="img/iconos/logotipo-despegar.svg" alt="Logotipo Despegar">
           </a>
         </figure>
       </article>
@@ -189,7 +193,7 @@
           </blockquote>
           <div class="user__comment">
             <p>-Sharyn </p>
-            <img src="img/icons/bandera-canada.svg" alt="Bandera Canadá">
+            <img src="img/iconos/bandera-canada.svg" alt="Bandera Canadá">
           </div>
         </div>
 
@@ -199,7 +203,7 @@
           </blockquote>
           <div class="user__comment">
             <p>-Julia</p>
-            <img src="img/icons/bandera-germany.svg" alt="Bandera Alemania">
+            <img src="img/iconos/bandera-germany.svg" alt="Bandera Alemania">
           </div>
         </div>
 
@@ -209,10 +213,18 @@
           </blockquote>
           <div class="user__comment">
             <p>-Lucia</p>
-            <img src="img/icons/bandera-usa.svg" alt="Bandera Estados Unidos">
+            <img src="img/iconos/bandera-usa.svg" alt="Bandera Estados Unidos">
           </div>
         </div>
       </article>
+    </div>
+  </section>
+
+  <section class="section" id="blog">
+    <div class="container">
+      <h2 class="section__title text__center">Blogs</h2>
+
+      <article class="section__blogs"></article>
     </div>
   </section>
 
@@ -255,13 +267,13 @@
 
             <div>
               <figure>
-                <img src="img/icons/logotipo-paypal.svg" alt="Logotipo PayPal">
+                <img src="img/iconos/logotipo-paypal.svg" alt="Logotipo PayPal">
               </figure>
               <figure>
-                <img src="img/icons/logotipo-mastercard.svg" alt="Logotipo MasterCard">
+                <img src="img/iconos/logotipo-mastercard.svg" alt="Logotipo MasterCard">
               </figure>
               <figure>
-                <img src="img/icons/logotipo-visa.svg" alt="Logotipo Visa">
+                <img src="img/iconos/logotipo-visa.svg" alt="Logotipo Visa">
               </figure>
             </div>
           </article>
@@ -271,22 +283,24 @@
 
             <div>
               <a href="https://www.facebook.com/www.hotelcentral.com.mx" target="_blank">
-                <img src="img/icons/icono-facebook.svg" alt="Icono Facebook">
+                <img src="img/iconos/icono-facebook.svg" alt="Icono Facebook">
               </a>
 
               <a href="https://www.instagram.com/hotelcentraljuchitan" target="_blank">
-                <img src="img/icons/icono-instagram.svg" alt="Icono Instagram">
+                <img src="img/iconos/icono-instagram.svg" alt="Icono Instagram">
               </a>
             </div>
           </article>
         </section>
       </section>
       <section class="container__copyright">
-        <p>Copyright © 2022 Hotel Central</p>
+        <p>Copyright &copy; 2022 Hotel Central</p>
       </section>
     </div>
   </footer>
 
-  <script src="js/hamburger-menu.js"></script>
+  <button class="scroll-top-btn hidden" id="scroll-top-btn">⬆️</button>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
